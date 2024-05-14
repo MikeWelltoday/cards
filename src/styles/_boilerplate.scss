@@ -9,6 +9,9 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 input,
@@ -37,4 +40,6 @@ body {
   color: var(--color-light-100);
 
   background-color: var(--color-dark-900);
+
+  border: 0;
 }
