@@ -1,5 +1,3 @@
-import { Dropdown } from '@/radix/dropdown/Dropdown'
-
 export function App() {
   return (
     <div
@@ -11,7 +9,7 @@ export function App() {
         width: '100vw',
       }}
     >
-      <Dropdown />
+      💩💩💩
     </div>
   )
 }
