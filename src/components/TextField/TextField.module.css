@@ -1,0 +1,32 @@
+.testField {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  left: 2px;
+  transition: 0.2s;
+}
+
+input {
+  font-size: 1rem;
+
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid yellow;
+  outline: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  transform: translateY(-1.5rem);
+  font-size: 0.8rem;
+}
+
+input:focus-visible {
+  border-bottom: 2px solid orange;
+}
+
+input::placeholder {
+  opacity: 0;
+}
