@@ -1,0 +1,20 @@
+.wrapper {
+  display: grid;
+
+  /* автоматически создаваемые строки */
+
+  /* grid-auto-rows: 250px; */
+
+  /* при умееньшении ширины картинки до 320px, картинка будет сбрасываться на ряд ниже */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+img {
+  /* пропорции сторон картинки */
+  aspect-ratio: 3 / 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

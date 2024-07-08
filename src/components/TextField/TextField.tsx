@@ -10,6 +10,8 @@ type TextFieldProps = {
 export const TextField = ({ placeholder, type }: TextFieldProps) => {
   const uniqueId = useId() + 'TextField'
 
+  /* на уроке по верстке делали пример кастомного инпута */
+
   return (
     <div className={s.testField}>
       <input id={uniqueId} placeholder={placeholder} type={type} />
