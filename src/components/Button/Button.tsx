@@ -1,6 +1,5 @@
 import { ComponentPropsWithoutRef, ElementType } from 'react'
 
-import { Typography } from '@/shared'
 import { clsx } from 'clsx'
 
 import s from './Button.module.scss'
@@ -26,7 +25,7 @@ export const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) 
       className={clsx(s.button, s[variant], fullWidth && s.fullWidth, className)}
       {...rest}
     >
-      <Typography.Subtitle2>{children}</Typography.Subtitle2>
+      <h1>{children}</h1>
     </Component>
   )
 }
